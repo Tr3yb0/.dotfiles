@@ -10,7 +10,7 @@ export ATOMIC_API_SECRET
 export MONGO_STAGING_URI_READ_ONLY='mongodb+srv://trey-botard:Lsd7XPTX8E1OKXXX@staging.wwxsb.mongodb.net/atomic'
 export MONGO_LOCAL_CLUSTER_NAME='Cluster0'
 export MONGO_LOCAL_GROUP_ID=6238b8fb63c6f94b70f2e59b
-export PACKAGES_ACCESS_TOKEN='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'
+export PACKAGES_ACCESS_TOKEN='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'
 export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
 export PUPPETEER_EXECUTABLE_PATH=`which chromium`
 
