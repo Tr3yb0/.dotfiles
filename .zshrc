@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH="$HOME/.dotfiles/.oh-my-zsh"
 export ENCRYPTION_SECRET=481288ce8e249840d0ffb61a962fe56e
 export ATOMIC_ATLAS_URI_LOCAL='mongodb+srv://treybotard:jTibN8vahImDYhyr@cluster0.qbffp.mongodb.net/atomic'
 export ATOMIC_API_KEY
