@@ -12,7 +12,7 @@ yabai -m config right_padding 8
 yabai -m config window_gap 10
 
 # center mouse on window with focus
-yabai -m config mouse_follows_focus off
+yabai -m config mouse_follows_focus on
 
 # center mouse on window with focus
 yabai -m config focus_follows_mouse off
@@ -29,6 +29,7 @@ yabai -m config mouse_action2 resize
 yabai -m mouse_drop_action swap
 
 # Disable specific apps from being managed with yabai.
-# yabai -m rule --add app="^System Settings$" manage=off
-
+yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^Calculator$" manage=off
+yabai -m rule --add app="^Karabiner-Elements$" manage=off
 
