@@ -1,8 +1,31 @@
-# change window focus within space
-alt - j : yabai -m window --focus south
-alt - k : yabai -m window --focus north
-alt - h : yabai -m window --focus west
-alt - l : yabai -m window --focus east
+# default layout (can be bsp, stack or float)
+yabai -m config layout bsp
+
+# New window spawns to the right if vertical split, or bottom if horizontal split
+yabai -m config window_placement second_child
+
+# padding set to 12px
+# yabai -m config top_padding 12
+# yabai -m config bottom_padding 12
+yabai -m config left_padding 8
+yabai -m config right_padding 8
+yabai -m config window_gap 10
+
+# center mouse on window with focus
+yabai -m config mouse_follows_focus on
+
+# center mouse on window with focus
+yabai -m config focus_follows_mouse off
+
+# modifier for clicking and dragging with mouse
+yabai -m config mouse_modifier alt
+# set modifier + left-click drag to move window
+yabai -m config mouse_action1 move
+# set modifier + right-click drag to resize window
+yabai -m config mouse_action2 resize
+
+# when window is dropped in center of another window, swap them (on edges it will split it)
+yabai -m mouse_drop_action swap
 
 # change focus between external displays (left and right)
 alt - s: yabai -m display --focus west
@@ -47,8 +70,8 @@ shift + alt - n : yabai -m window --space next;
 shift + alt - c : yabai -m space --create
 
 # Delete focused space and focus first space on display
-shift + alt - d : yabai -m space --destroy	
-# move window to space 
+shift + alt - d : yabai -m space --destroy
+# move window to space
 shift + alt - 1 : yabai -m window --space 1;
 shift + alt - 2 : yabai -m window --space 2;
 shift + alt - 3 : yabai -m window --space 3;
@@ -57,7 +80,7 @@ shift + alt - 5 : yabai -m window --space 5;
 shift + alt - 6 : yabai -m window --space 6;
 shift + alt - 7 : yabai -m window --space 7;
 
-# move focused window to occupy the left two thirds of the screen. 
+# move focused window to occupy the left two thirds of the screen.
 shift + alt - q : yabai -m window --grid 1:3:0:0:2:1
 
 # toggle window split - vertical to horizontal or vice versa
@@ -67,3 +90,9 @@ shift + alt - w : yabai -m window --toggle split
 ctrl + alt - q : brew services stop yabai
 ctrl + alt - s : brew services start yabai
 ctrl + alt - r : brew services restart yabai
+
+# Disable specific apps from being managed with yabai.
+yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^Calculator$" manage=off
+yabai -m rule --add app="^Karabiner-Elements$" manage=off
+
