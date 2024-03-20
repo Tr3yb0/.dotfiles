@@ -1,0 +1,97 @@
+{:applications {:vim-mode-disabled-application ["^com\\.apple\\.Terminal$",
+                                                "^com\\.googlecode\\.iterm2$"
+                                                ]
+                :chrome "^com\\.google\\.Chrome$"
+                :1password "^com\\.agilebits\\.onepassword8$"
+                :vscode "vv^com\\.microsoft\\.VSCode$"
+                :discord "^com\\.discordapp\\.Discord$"
+                :slack "^com\\.tinyspeck\\.slackmacgap$"
+                :notion "^notion\\.desktop$"
+                :linear "^com\\.linear\\.app$"
+                :iterm "^com\\.googlecode\\.iterm2$"
+                :postman "^com\\.postmanlabs\\.mac$"
+                :spotify "^com\\.spotify\\.client$"
+                :whatsapp "^com\\.whatsapp\\.WhatsApp$"}
+
+ :profiles {:vi-mode-default-profile {:default true
+                                      :alone   100
+                                      :held    80
+                                      :delay   0
+                                      :sim     100}}
+ :templates {:open "open -a \"%s\""}
+
+ :simlayers {:vi-mode {:key :e}
+             :vi-visual-mode {:key :v :condi :!vim-mode-disabled-application}
+        ;;       :a-mode {:key :a} ;; command when held simlayer
+        ;;       :s-mode {:key :s} ;; opt when held
+        ;;       :d-mode {:key :d} ;; ctrl when held
+        ;;       :f-mode {:key :f} ;; shift when held
+        ;;       :j-mode {:key :j} ;; command when held
+        ;;       :k-mode {:key :k} ;; opt when held
+        ;;       :l-mode {:key :l} ;; ctrl when held
+        ;;       :semicolon-mode {:key :semicolon} ;; shift when held
+
+             :launch-mode {:key :z}} ;; launch applications
+
+ :main [{:des "Vi Mode [e as Trigger Key]"
+         :rules [[:##j :down_arrow :vi-mode]
+                 [:##k :up_arrow :vi-mode]
+                 [:##h :left_arrow :vi-mode]
+                 [:##l :right_arrow :vi-mode]
+                 [:##b :!Oleft_arrow :vi-mode]
+                 [:##w :!Oright_arrow :vi-mode]
+                 [:##0 :!Ta :vi-mode]
+                 [:##4 :!Te :vi-mode]]}
+
+        {:des "Vi Visual Mode [v as Trigger Key]]"
+         :rules [[:##j :!Sdown_arrow :vi-visual-mode]
+                 [:##k :!Sup_arrow :vi-visual-mode]
+                 [:##h :!Sleft_arrow :vi-visual-mode]
+                 [:##l :!Sright_arrow :vi-visual-mode]
+                 [:##b :!SOleft_arrow :vi-visual-mode]
+                 [:##w :!SOright_arrow :vi-visual-mode]
+                 [:##0 :!SCleft_arrow :vi-visual-modee]
+                 [:##4 :!SCright_arrow :vi-visual-mode]
+                 [:##open_bracket :!SOup_arrow :vi-visual-mode]
+                 [:##close_bracket :!SOdown_arrow :vi-visual-mode]
+                 ;; switch tabs in most apps
+                 ;; Cmd Shift [
+                 [:##comma :!CSopen_bracket :vi-visual-mode]
+                 ;; Cmd Shift ]
+                 [:##period :!CSclose_bracket :vi-visual-mode]]}
+
+        {:des "Launch Mode"
+         :rules [[:i [:open "iTerm"] :launch-mode]
+                 [:c [:open "Google Chrome"] :launch-mode]
+                 [:s [:open "Slack"] :launch-mode]
+                 [:d [:open "Discord"] :launch-mode]
+                 [:n [:open "Notion"] :launch-mode]
+                 [:l [:open "Linear"] :launch-mode]
+                 [:p [:open "Postman"] :launch-mode]
+                 [:v [:open "Visual Studio Code"] :launch-mode]
+                 [:1 [:open "1Password"] :launch-mode]
+                 [:m [:open "Spotify"] :launch-mode]
+                 [:w [:open "WhatsApp"] :launch-mode]
+                 [:f [:open "Finder"] :launch-mode]
+                 [:e [:open "Weather"] :launch-mode]
+                ;;  add gmail
+                ;;  add calendar
+                 ]}
+
+
+        {:des "caps to esc when alone, to ctrl as modifier"
+         :rules [[:##caps_lock :left_control nil {:alone :escape}]]}
+        {:des "swap : and ;"
+         :rules [[:#Psemicolon :!Ssemicolon]
+                 [:!Ssemicolon :semicolon]]}]
+
+ :cheatsheet {:!Ca "command a" ;; mandatory left_command
+              :!Ta "control a" ;; mandatory left_control
+              :!Oa "option a"
+              :!Sa "shift a"
+              :#Sa "shift a" ;; keycode a, optional left_shift
+              :!CTOa "command control option a"
+              :!Cspacebar "command space"
+              :!Fa "fn a"
+              :##a "keycode a optional any"
+              :!!a "mandatory hyper(control command option shift) a "}}
