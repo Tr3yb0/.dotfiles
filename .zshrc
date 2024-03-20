@@ -13,7 +13,7 @@ export MONGO_LOCAL_GROUP_ID=6238b8fb63c6f94b70f2e59b
 export PACKAGES_ACCESS_TOKEN='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'
 export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
 export PUPPETEER_EXECUTABLE_PATH=`which chromium`
-# export GOKU_EDN_CONFIG_FILE='~/.dotfiles/karabiner/karabiner.edn'
+# export GOKU_EDN_CONFIG_FILE='$HOME/.dotfiles/karabiner.edn'
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -121,6 +121,27 @@ export NVM_DIR="$HOME/.nvm"
 # Bun
 export BUN_INSTALL="/Users/trey/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Good Morning
+sdm_login() {
+    sdm login --email trey@atomicfi.com
+}
+services_login() {
+    (cd ~/dev/atomic/services && sh .scripts/setup-aws-sso.sh)
+}
+perimeter81_login() {
+    open "https://atomic.perimeter81.com/sign-in?redirectUrl=perimeter81://perimeter81.com/macos/callback"
+}
+backoffice() {
+    open "https://backoffice.atomicfi.com"
+    open "https://backoffice-sandbox.atomicfi.com"
+}
+morning() {
+    sdm_login
+    perimeter81_login
+    backoffice
+}
+
 #compdef _ngrok ngrok
 
 # zsh completion for ngrok                                -*- shell-script -*-
