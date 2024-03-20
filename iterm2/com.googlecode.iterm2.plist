@@ -4,23 +4,35 @@
 <dict>
 	<key>AllowClipboardAccess</key>
 	<true/>
-	<key>AlternateMouseScroll</key>
-	<true/>
-	<key>CloseBookmarksWindowAfterOpening</key>
-	<true/>
-	<key>CopyLastNewline</key>
+	<key>AutoHideTmuxClientSession</key>
 	<true/>
 	<key>Default Bookmark Guid</key>
-	<string>32737BCA-A12E-422D-9417-A4CDD232ACB5</string>
+	<string>789185DD-8E2C-422B-BB40-C13D57615026</string>
+	<key>DimBackgroundWindows</key>
+	<false/>
 	<key>DimOnlyText</key>
+	<true/>
+	<key>DrawBottomLineForHorizontalTabBar</key>
+	<true/>
+	<key>EnableDivisionView</key>
 	<true/>
 	<key>EnableRendezvous</key>
 	<true/>
+	<key>FocusFollowsMouse</key>
+	<false/>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
+	<key>HideActivityIndicator</key>
+	<true/>
 	<key>HideScrollbar</key>
 	<true/>
+	<key>HideTab</key>
+	<true/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
+	<true/>
+	<key>LeftTabBarWidth</key>
+	<real>114</real>
+	<key>MaxVertically</key>
 	<true/>
 	<key>New Bookmarks</key>
 	<array>
@@ -42,16 +54,12 @@
 			</dict>
 			<key>Ansi 1 Color</key>
 			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.14186322689056396</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
+				<real>0.0</real>
 				<key>Green Component</key>
-				<real>0.25045261531639268</real>
+				<real>0.0</real>
 				<key>Red Component</key>
-				<real>0.9453125</real>
+				<real>0.73333334922790527</real>
 			</dict>
 			<key>Ansi 10 Color</key>
 			<dict>
@@ -127,16 +135,12 @@
 			</dict>
 			<key>Ansi 4 Color</key>
 			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
 				<key>Blue Component</key>
-				<real>1</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
+				<real>0.73333334922790527</real>
 				<key>Green Component</key>
-				<real>0.50365954429953741</real>
+				<real>0.0</real>
 				<key>Red Component</key>
-				<real>0.397491455078125</real>
+				<real>0.0</real>
 			</dict>
 			<key>Ansi 5 Color</key>
 			<dict>
@@ -205,7 +209,7 @@
 			<key>Blur</key>
 			<true/>
 			<key>Blur Radius</key>
-			<real>19.63241356382979</real>
+			<real>20.23922041223404</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -215,8 +219,6 @@
 				<key>Red Component</key>
 				<real>1</real>
 			</dict>
-			<key>Bound Hosts</key>
-			<array/>
 			<key>Character Encoding</key>
 			<integer>4</integer>
 			<key>Close Sessions On End</key>
@@ -243,12 +245,12 @@
 				<key>Red Component</key>
 				<real>1</real>
 			</dict>
-			<key>Cursor Type</key>
-			<integer>2</integer>
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
 			<string>No</string>
+			<key>Custom Tab Title</key>
+			<string>\(currentTab.currentSession.path)</string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Description</key>
@@ -271,13 +273,13 @@
 				<real>0.67843137254901964</real>
 			</dict>
 			<key>Guid</key>
-			<string>32737BCA-A12E-422D-9417-A4CDD232ACB5</string>
-			<key>Has Hotkey</key>
-			<false/>
+			<string>789185DD-8E2C-422B-BB40-C13D57615026</string>
 			<key>Horizontal Spacing</key>
 			<real>1</real>
 			<key>Idle Code</key>
 			<integer>0</integer>
+			<key>Initial Text</key>
+			<string></string>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
@@ -342,39 +344,6 @@
 					<integer>11</integer>
 					<key>Text</key>
 					<string>0x7f</string>
-				</dict>
-				<key>0x66-0x140000-0x3</key>
-				<dict>
-					<key>Action</key>
-					<integer>23</integer>
-					<key>Label</key>
-					<string></string>
-					<key>Text</key>
-					<string></string>
-					<key>Version</key>
-					<integer>1</integer>
-				</dict>
-				<key>0x7f-0x100000-0x33</key>
-				<dict>
-					<key>Action</key>
-					<integer>11</integer>
-					<key>Label</key>
-					<string></string>
-					<key>Text</key>
-					<string>0x15</string>
-					<key>Version</key>
-					<integer>1</integer>
-				</dict>
-				<key>0x7f-0x80000-0x33</key>
-				<dict>
-					<key>Action</key>
-					<integer>11</integer>
-					<key>Label</key>
-					<string></string>
-					<key>Text</key>
-					<string>0x17</string>
-					<key>Version</key>
-					<integer>1</integer>
 				</dict>
 				<key>0xf700-0x220000</key>
 				<dict>
@@ -460,17 +429,6 @@
 					<key>Text</key>
 					<string>0x1b 0x1b 0x5b 0x44</string>
 				</dict>
-				<key>0xf702-0x280000-0x7b</key>
-				<dict>
-					<key>Action</key>
-					<integer>10</integer>
-					<key>Label</key>
-					<string></string>
-					<key>Text</key>
-					<string>b</string>
-					<key>Version</key>
-					<integer>1</integer>
-				</dict>
 				<key>0xf703-0x220000</key>
 				<dict>
 					<key>Action</key>
@@ -492,16 +450,12 @@
 					<key>Text</key>
 					<string>[1;6C</string>
 				</dict>
-				<key>0xf703-0x280000-0x7c</key>
+				<key>0xf703-0x280000</key>
 				<dict>
 					<key>Action</key>
-					<integer>10</integer>
-					<key>Label</key>
-					<string></string>
+					<integer>11</integer>
 					<key>Text</key>
-					<string>f</string>
-					<key>Version</key>
-					<integer>1</integer>
+					<string>0x1b 0x1b 0x5b 0x43</string>
 				</dict>
 				<key>0xf704-0x20000</key>
 				<dict>
@@ -616,22 +570,18 @@
 					<string>[1;5F</string>
 				</dict>
 			</dict>
-			<key>Minimum Contrast</key>
-			<real>0.0</real>
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
 			<string>TB Profile</string>
 			<key>Non Ascii Font</key>
-			<string>Geist-Regular 11</string>
+			<string>GeistMono-Regular 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Non-ASCII Ligatures</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>GeistMono-SemiBold 15</string>
-			<key>Only The Default BG Color Uses Transparency</key>
-			<false/>
+			<string>GeistMono-Medium 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -655,16 +605,12 @@
 			</dict>
 			<key>Selection Color</key>
 			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.97198486328125</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
+				<real>1</real>
 				<key>Green Component</key>
-				<real>0.75951651260633735</real>
+				<real>0.8353000283241272</real>
 				<key>Red Component</key>
-				<real>0.57764993980526924</real>
+				<real>0.70980000495910645</real>
 			</dict>
 			<key>Send Code When Idle</key>
 			<false/>
@@ -679,12 +625,14 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.080000000000000002</real>
+			<real>0.079999999999999974</real>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
 			<true/>
 			<key>Use Bright Bold</key>
+			<true/>
+			<key>Use Custom Tab Title</key>
 			<true/>
 			<key>Use Italic Font</key>
 			<true/>
@@ -697,10 +645,12 @@
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
-			<string>/Users/trey</string>
+			<string>/Users/treybotard</string>
 		</dict>
 		<dict>
 			<key>ASCII Anti Aliased</key>
+			<true/>
+			<key>ASCII Ligatures</key>
 			<true/>
 			<key>Ambiguous Double Width</key>
 			<false/>
@@ -715,16 +665,12 @@
 			</dict>
 			<key>Ansi 1 Color</key>
 			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.14186322689056396</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
+				<real>0.0</real>
 				<key>Green Component</key>
-				<real>0.25045261531639268</real>
+				<real>0.0</real>
 				<key>Red Component</key>
-				<real>0.9453125</real>
+				<real>0.73333334922790527</real>
 			</dict>
 			<key>Ansi 10 Color</key>
 			<dict>
@@ -800,16 +746,12 @@
 			</dict>
 			<key>Ansi 4 Color</key>
 			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
 				<key>Blue Component</key>
-				<real>1</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
+				<real>0.73333334922790527</real>
 				<key>Green Component</key>
-				<real>0.50365954429953741</real>
+				<real>0.0</real>
 				<key>Red Component</key>
-				<real>0.397491455078125</real>
+				<real>0.0</real>
 			</dict>
 			<key>Ansi 5 Color</key>
 			<dict>
@@ -863,20 +805,22 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.20000000000000001</real>
+				<real>0.1803921568627451</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.20000000000000001</real>
+				<real>0.15294117647058825</real>
 				<key>Red Component</key>
-				<real>0.20000000000000001</real>
+				<real>0.13333333333333333</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
 			<key>Blinking Cursor</key>
 			<false/>
 			<key>Blur</key>
-			<false/>
+			<true/>
+			<key>Blur Radius</key>
+			<real>20.23922041223404</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -886,6 +830,8 @@
 				<key>Red Component</key>
 				<real>1</real>
 			</dict>
+			<key>Bonjour Service Address</key>
+			<string>192.168.86.209</string>
 			<key>Character Encoding</key>
 			<integer>4</integer>
 			<key>Close Sessions On End</key>
@@ -893,7 +839,7 @@
 			<key>Columns</key>
 			<integer>80</integer>
 			<key>Command</key>
-			<string></string>
+			<string>ssh 192.168.86.209</string>
 			<key>Cursor Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -913,28 +859,32 @@
 				<real>1</real>
 			</dict>
 			<key>Custom Command</key>
-			<string>No</string>
+			<string>Yes</string>
 			<key>Custom Directory</key>
 			<string>No</string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Description</key>
-			<string>Default</string>
+			<string>Trey’s MacBook Pro</string>
 			<key>Disable Window Resizing</key>
 			<true/>
 			<key>Flashing Bell</key>
 			<false/>
 			<key>Foreground Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.73333334922790527</real>
+				<real>0.7803921568627451</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.73333334922790527</real>
+				<real>0.72941176470588232</real>
 				<key>Red Component</key>
-				<real>0.73333334922790527</real>
+				<real>0.67843137254901964</real>
 			</dict>
 			<key>Guid</key>
-			<string>C2DED15A-D418-4DCA-9726-1DE520D083BE</string>
+			<string>260EC873-0DAB-411B-9719-A7008EB3ED9C</string>
 			<key>Horizontal Spacing</key>
 			<real>1</real>
 			<key>Idle Code</key>
@@ -1229,18 +1179,18 @@
 					<string>[1;5F</string>
 				</dict>
 			</dict>
-			<key>Minimum Contrast</key>
-			<real>0.0</real>
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
-			<string>Default</string>
+			<string>Trey’s MacBook Pro</string>
 			<key>Non Ascii Font</key>
-			<string>Monaco 12</string>
+			<string>GeistMono-Regular 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
+			<key>Non-ASCII Ligatures</key>
+			<true/>
 			<key>Normal Font</key>
-			<string>Monaco 13</string>
+			<string>GeistMono-Medium 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1273,18 +1223,18 @@
 			</dict>
 			<key>Send Code When Idle</key>
 			<false/>
-			<key>Shortcut</key>
-			<string></string>
 			<key>Silence Bell</key>
 			<false/>
 			<key>Sync Title</key>
 			<false/>
 			<key>Tags</key>
-			<array/>
+			<array>
+				<string>bonjour</string>
+			</array>
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.0</real>
+			<real>0.079999999999999974</real>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
@@ -1294,7 +1244,7 @@
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Non-ASCII Font</key>
-			<false/>
+			<true/>
 			<key>Vertical Spacing</key>
 			<real>1</real>
 			<key>Visual Bell</key>
@@ -1302,7 +1252,7 @@
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
-			<string>/Users/trey</string>
+			<string></string>
 		</dict>
 		<dict>
 			<key>ASCII Anti Aliased</key>
@@ -1322,16 +1272,12 @@
 			</dict>
 			<key>Ansi 1 Color</key>
 			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.14186322689056396</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
+				<real>0.0</real>
 				<key>Green Component</key>
-				<real>0.25045261531639268</real>
+				<real>0.0</real>
 				<key>Red Component</key>
-				<real>0.9453125</real>
+				<real>0.73333334922790527</real>
 			</dict>
 			<key>Ansi 10 Color</key>
 			<dict>
@@ -1407,16 +1353,12 @@
 			</dict>
 			<key>Ansi 4 Color</key>
 			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
 				<key>Blue Component</key>
-				<real>1</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
+				<real>0.73333334922790527</real>
 				<key>Green Component</key>
-				<real>0.50365954429953741</real>
+				<real>0.0</real>
 				<key>Red Component</key>
-				<real>0.397491455078125</real>
+				<real>0.0</real>
 			</dict>
 			<key>Ansi 5 Color</key>
 			<dict>
@@ -1485,7 +1427,7 @@
 			<key>Blur</key>
 			<true/>
 			<key>Blur Radius</key>
-			<real>19.63241356382979</real>
+			<real>20.23922041223404</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -1495,10 +1437,6 @@
 				<key>Red Component</key>
 				<real>1</real>
 			</dict>
-			<key>Bonjour Service Address</key>
-			<string>fe80::b0f1:d8ff:fe16:885</string>
-			<key>Bound Hosts</key>
-			<array/>
 			<key>Character Encoding</key>
 			<integer>4</integer>
 			<key>Close Sessions On End</key>
@@ -1506,7 +1444,7 @@
 			<key>Columns</key>
 			<integer>80</integer>
 			<key>Command</key>
-			<string>ssh fe80::b0f1:d8ff:fe16:885</string>
+			<string></string>
 			<key>Cursor Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -1525,16 +1463,16 @@
 				<key>Red Component</key>
 				<real>1</real>
 			</dict>
-			<key>Cursor Type</key>
-			<integer>2</integer>
 			<key>Custom Command</key>
-			<string>Yes</string>
+			<string>No</string>
 			<key>Custom Directory</key>
 			<string>No</string>
+			<key>Custom Tab Title</key>
+			<string>\(currentTab.currentSession.path)</string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Description</key>
-			<string>Trey’s MacBook Pro</string>
+			<string>Default</string>
 			<key>Disable Window Resizing</key>
 			<true/>
 			<key>Flashing Bell</key>
@@ -1553,7 +1491,7 @@
 				<real>0.67843137254901964</real>
 			</dict>
 			<key>Guid</key>
-			<string>520D7377-384F-4F1B-837D-22B2BA95D40A</string>
+			<string>F3B066CA-A549-4048-B5D2-B054C3EFCA64</string>
 			<key>Has Hotkey</key>
 			<false/>
 			<key>Horizontal Spacing</key>
@@ -1624,39 +1562,6 @@
 					<integer>11</integer>
 					<key>Text</key>
 					<string>0x7f</string>
-				</dict>
-				<key>0x66-0x140000-0x3</key>
-				<dict>
-					<key>Action</key>
-					<integer>23</integer>
-					<key>Label</key>
-					<string></string>
-					<key>Text</key>
-					<string></string>
-					<key>Version</key>
-					<integer>1</integer>
-				</dict>
-				<key>0x7f-0x100000-0x33</key>
-				<dict>
-					<key>Action</key>
-					<integer>11</integer>
-					<key>Label</key>
-					<string></string>
-					<key>Text</key>
-					<string>0x15</string>
-					<key>Version</key>
-					<integer>1</integer>
-				</dict>
-				<key>0x7f-0x80000-0x33</key>
-				<dict>
-					<key>Action</key>
-					<integer>11</integer>
-					<key>Label</key>
-					<string></string>
-					<key>Text</key>
-					<string>0x17</string>
-					<key>Version</key>
-					<integer>1</integer>
 				</dict>
 				<key>0xf700-0x220000</key>
 				<dict>
@@ -1742,17 +1647,6 @@
 					<key>Text</key>
 					<string>0x1b 0x1b 0x5b 0x44</string>
 				</dict>
-				<key>0xf702-0x280000-0x7b</key>
-				<dict>
-					<key>Action</key>
-					<integer>10</integer>
-					<key>Label</key>
-					<string></string>
-					<key>Text</key>
-					<string>b</string>
-					<key>Version</key>
-					<integer>1</integer>
-				</dict>
 				<key>0xf703-0x220000</key>
 				<dict>
 					<key>Action</key>
@@ -1774,16 +1668,12 @@
 					<key>Text</key>
 					<string>[1;6C</string>
 				</dict>
-				<key>0xf703-0x280000-0x7c</key>
+				<key>0xf703-0x280000</key>
 				<dict>
 					<key>Action</key>
-					<integer>10</integer>
-					<key>Label</key>
-					<string></string>
+					<integer>11</integer>
 					<key>Text</key>
-					<string>f</string>
-					<key>Version</key>
-					<integer>1</integer>
+					<string>0x1b 0x1b 0x5b 0x43</string>
 				</dict>
 				<key>0xf704-0x20000</key>
 				<dict>
@@ -1898,22 +1788,18 @@
 					<string>[1;5F</string>
 				</dict>
 			</dict>
-			<key>Minimum Contrast</key>
-			<real>0.0</real>
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
-			<string>Trey’s MacBook Pro</string>
+			<string>tmux</string>
 			<key>Non Ascii Font</key>
-			<string>Geist-Regular 10</string>
+			<string>GeistMono-Regular 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Non-ASCII Ligatures</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>GeistMono-SemiBold 14</string>
-			<key>Only The Default BG Color Uses Transparency</key>
-			<false/>
+			<string>GeistMono-Medium 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1937,36 +1823,34 @@
 			</dict>
 			<key>Selection Color</key>
 			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.97198486328125</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
+				<real>1</real>
 				<key>Green Component</key>
-				<real>0.75951651260633735</real>
+				<real>0.8353000283241272</real>
 				<key>Red Component</key>
-				<real>0.57764993980526924</real>
+				<real>0.70980000495910645</real>
 			</dict>
 			<key>Send Code When Idle</key>
 			<false/>
+			<key>Shortcut</key>
+			<string></string>
 			<key>Silence Bell</key>
 			<false/>
 			<key>Sync Title</key>
 			<false/>
 			<key>Tags</key>
-			<array>
-				<string>bonjour</string>
-			</array>
+			<array/>
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.080000000000000002</real>
+			<real>0.079999999999999974</real>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
 			<true/>
 			<key>Use Bright Bold</key>
+			<true/>
+			<key>Use Custom Tab Title</key>
 			<true/>
 			<key>Use Italic Font</key>
 			<true/>
@@ -1979,11 +1863,9 @@
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
-			<string></string>
+			<string>/Users/treybotard</string>
 		</dict>
 	</array>
-	<key>OnlyWhenMoreTabs</key>
-	<false/>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -2021,29 +1903,40 @@
 	<true/>
 	<key>PromptOnQuit</key>
 	<false/>
-	<key>QuitWhenAllWindowsClosed</key>
+	<key>SeparateStatusBarsPerPane</key>
 	<false/>
-	<key>SavePasteHistory</key>
+	<key>SeparateWindowTitlePerTab</key>
 	<false/>
-	<key>Size Changes Affect Profile</key>
+	<key>ShowPaneTitles</key>
 	<true/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
-	<real>0.30361726334951472</real>
+	<real>0.30000000000000004</real>
 	<key>StatusBarPosition</key>
 	<integer>1</integer>
+	<key>StretchTabsToFillBar</key>
+	<false/>
 	<key>SwitchPaneModifier</key>
-	<integer>5</integer>
+	<integer>1</integer>
 	<key>SwitchTabModifier</key>
-	<integer>4</integer>
-	<key>SwitchWindowModifier</key>
-	<integer>6</integer>
+	<integer>5</integer>
+	<key>TabStyleWithAutomaticOption</key>
+	<integer>5</integer>
+	<key>TabViewType</key>
+	<integer>1</integer>
+	<key>TmuxUsesDedicatedProfile</key>
+	<false/>
 	<key>ToolbeltTools</key>
 	<array>
+		<string>Paste History</string>
+		<string>Notes</string>
 		<string>Snippets</string>
 		<string>Actions</string>
+		<string>Recent Directories</string>
 	</array>
+	<key>UseBorder</key>
+	<false/>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
 	<key>findMode_iTerm</key>
