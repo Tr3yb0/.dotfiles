@@ -321,3 +321,4 @@ if [ "$funcstack[1]" = "_ngrok" ]; then
 fi
 compdef _ngrok ngrok
 alias vim="nvim"
+alias v="nvim ."
