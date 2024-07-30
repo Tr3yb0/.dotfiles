@@ -13,6 +13,8 @@ export MONGO_LOCAL_GROUP_ID=6238b8fb63c6f94b70f2e59b
 export PACKAGES_ACCESS_TOKEN='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'
 export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
 export PUPPETEER_EXECUTABLE_PATH=`which chromium`
+export FZF_DEFAULT_OPTS="--preview 'bat --color=always {}'"
+export FZF_DEFAULT_COMMAND="rg --files --hidden --follow --glob '!.git'"
 # export GOKU_EDN_CONFIG_FILE='$HOME/.dotfiles/karabiner.edn'
 
 # Set name of the theme to load --- if set to "random", it will
@@ -141,6 +143,10 @@ morning() {
     perimeter81_login
     backoffice
 }
+
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 #compdef _ngrok ngrok
 
