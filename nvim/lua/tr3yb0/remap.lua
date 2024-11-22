@@ -16,6 +16,9 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
+-- highlight and replace in visual mode
+vim.keymap.set("v", "r", "y:%s/<C-r>0//gI<left><left><left>")
+
 -- yanks to system clipboard
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])

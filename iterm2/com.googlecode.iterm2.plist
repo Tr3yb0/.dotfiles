@@ -9,7 +9,7 @@
 	<key>CloseBookmarksWindowAfterOpening</key>
 	<true/>
 	<key>CopyLastNewline</key>
-	<true/>
+	<false/>
 	<key>Default Arrangement Name</key>
 	<string>main repos</string>
 	<key>Default Bookmark Guid</key>
@@ -38,6 +38,8 @@
 	<false/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
+	<key>IRMemory</key>
+	<integer>4</integer>
 	<key>LeftTabBarWidth</key>
 	<real>114</real>
 	<key>New Bookmarks</key>

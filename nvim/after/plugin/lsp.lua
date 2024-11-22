@@ -5,6 +5,7 @@ lsp.ensure_installed({
     'tsserver',
     'eslint',
     'gopls',
+    'volar'
 })
 --[[
 lsp.format_on_save({

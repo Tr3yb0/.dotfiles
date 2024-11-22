@@ -15,7 +15,6 @@
     ;; ## | optional any
 
 {:applications {:vim-mode-disabled-application ["^com\\.apple\\.Terminal$",
-                                                "^com\\.googlecode\\.iterm2$",
                                                 "^org\\.vim\\.",
                                                 "^com\\.qvacua\\.VimR$"]}
  :profiles {:vi-mode-default-profile {:default true}}
