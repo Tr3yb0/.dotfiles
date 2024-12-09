@@ -1,0 +1,10 @@
+{
+	"optOut": false,
+	"lastUpdateCheck": 1666106604353,
+	"update": {
+		"latest": "11.1.3",
+		"current": "8.7.0",
+		"type": "major",
+		"name": "serverless-offline"
+	}
+}
